@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,6 +11,7 @@
   <link href="./styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="./style/bootstrap.min.css" />
   <link rel="stylesheet" href="./style/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <title>Grrinta Derby</title>
 </head>
 
@@ -45,22 +47,33 @@
         </nav>
       </header>
       <div class="home__container">
-        <div class="home__text-container">
+        <div class="home__text-container m-auto text-center">
           <h1>
-            <p class="text-light fs-1 fw-semibold animated-text"></p>
-            Grrinta Derby <br />
-            in football <br />
-            2025-2026
+            Football league
+            2<span>0</span>25-2<span>0</span>26
           </h1>
 
           <div>
-            <img class="logo-t" src="./img/club/WhatsApp_Image_2025-01-02_at_19.24.10-removebg-preview.png" alt="">
-            <img class="logo-t" src="./img/club/WhatsApp_Image_2025-01-03_at_15.22.29-removebg-preview.png" alt="">
+            <img class="logo-t" src="./img/club/WhatsApp_Image_2025-01-02_at_19.24.10-removebg-preview.png"
+              alt="Wolves logo">
+            <img class="logo-t2" src="./img/club/blograna logo.png" alt="Blograna logo">
+            <img class="logo-t" src="./img/club/WhatsApp_Image_2025-01-03_at_15.22.29-removebg-preview.png"
+              alt="Ghost logo">
+            <img class="logo-t2" src="./img/club/santos logo.png" alt="Santos logo">
           </div>
-          <button class="btn btn-primary">
-            Watch Live <i class="fas fa-arrow-right"></i></button>
+
+          <div class="custom-tooltip-container">
+            <button class="btn btn-primary">Watch Live <i class="fas fa-video"></i></button>
+            <div class="custom-tooltip-content">
+              <span class="custom-tooltip-arrow"></span>
+              <p class="custom-tooltip-text">
+                Sorry, this feature is not available yet.
+              </p>
+            </div>
+          </div>
+
           <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight">Rules</button>
+            aria-controls="offcanvasRight">Rules <i class="fas fa-flag"></i></button>
 
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
@@ -68,10 +81,26 @@
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
-              الي هيفوت مرتين ورا بعض ميجيش الساعة أقصى حاجة ٣ مرات هيخرج م الجروب ومش هنجيبه تاني
-              الي هيعمل مشكلة في الملعب أو هيتكلم مع حد بأسلوب مش كويس سواء من فريقه او من الفريق التاني
-              المرة الي بعدها مش هنعمل حسابه (كأنه واخد طرد ) ولو اتكررت تاني هنقوله هتوحشنا
+            <div dir="rtl" class="offcanvas-body fs-5 ">
+              المباريات تقام بنظام الذهاب والإياب
+              <hr>
+              في حالة الفوز يحصل الفريق الفائز على ثلاث نقاط
+              <hr>
+              في حالة التعادل يحصل كل فريق على نقطة واحدة
+              <hr>
+
+              في حالة غياب أحد لاعبي الفريق يلعب الفريق المبارة ناقص العدد
+              <hr>
+
+              إذا تأخر الفريق عن موعد المبارة أكثر من 15دقيقة يعتبر منسحبًا
+              <hr>
+
+              في حالة انسحاب أحد الفرق من المبارة تحسب النتيجة 3-0 للفريق الأخر
+              <hr>
+
+              إذا تساوى فريقان في عدد النقاط يتم الترتيب بفارق الأهداف ثم المواجهات المباشرة
+              <hr>
+              عند افتعال أي لاعب للمشاكل يتم الطرد ولن يلعب المبارة القادمة لفريقه
             </div>
           </div>
         </div>
@@ -83,19 +112,20 @@
     </div>
   </section>
 
-  <section id="player" class="players__section">
+  <section id="player" class="players__section"  data-aos="fade-up">
     <div class="container2">
       <div class="player__content">
         <div class="player__text-content">
-          <h2>Team players</h2>
+          <button class="bt">
+            <h2>Team players</h2>
+          </button>
         </div>
         <div class="club__table">
           <div class="players__content">
             <div class="players">
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/ziko.jpeg" alt="Neymar Jr Photo" alt="Ahmed Zakaria" />
-  
+                  <img src="./img/players/ziko.jpeg" class="popup-img" alt="Ziko" />
                 </div>
                 <div class="player__name">
                   <h3 class="text-light">Ahmed Zakaria</h3>
@@ -108,22 +138,8 @@
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/y.ashraf.jpeg" alt="Neymar Jr Photo" alt="Yahia ashraf" />
-  
-                </div>
-                <div class="player__name">
-                  <h3 class="text-light">Yahia Ashraf</h3>
-                </div>
-                <div class="player__details">
-                  <h4>position:Striker</h4>
-                  <h4>Team:Ghost</h4>
-                  <h4>Number:10</h4>
-                </div>
-              </div>
-              <div class="player">
-                <div class="player__img">
-                  <img src="./img/players/y.mohamed.jpeg" alt="Neymar Jr Photo" alt="Yahia mohamed" />
-  
+                  <img src="./img/players/y.mohamed.jpeg" class="popup-img" alt="Yahia mohamed" />
+
                 </div>
                 <div class="player__name">
                   <h3 class="text-light">Yahia Mohamed</h3>
@@ -136,8 +152,8 @@
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/omar.jpg" alt="Neymar Jr Photo" alt="Omar master" />
-  
+                  <img src="./img/players/omar.jpg" class="popup-img" alt="Omar master" />
+
                 </div>
                 <div class="player__name">
                   <h3 class="text-light">Omar Mahmoud</h3>
@@ -150,49 +166,8 @@
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/kimo.jpg" alt="Neymar Jr Photo" alt="Karim Ashraf" />
-                </div>
-                <div class="player__name">
-                  <h3 class="text-light">Karim Ashraf</h3>
-                </div>
-                <div class="player__details">
-                  <h4>position:Striker</h4>
-                  <h4>Team:Ghost</h4>
-                  <h4>Number:9</h4>
-                </div>
-              </div>
-              <div class="player">
-                <div class="player__img">
-                  <img src="./img/players/saif.jpg" alt="Neymar Jr Photo" alt="Saif Ahmed" />
-  
-                </div>
-                <div class="player__name">
-                  <h3 class="text-light">Saif Ahmed</h3>
-                </div>
-                <div class="player__details">
-                  <h4>position:Defender</h4>
-                  <h4>Team:Ghost</h4>
-                  <h4>Number:25</h4>
-                </div>
-              </div>
-              <div class="player">
-                <div class="player__img">
-                  <img src="./img/players/mina.jpeg" alt="Neymar Jr Photo" alt="Mina Farid" />
-  
-                </div>
-                <div class="player__name">
-                  <h3 class="text-light">Mina Farid</h3>
-                </div>
-                <div class="player__details">
-                  <h4>position:Goalkeeper</h4>
-                  <h4>Team:Ghost</h4>
-                  <h4>Number:1</h4>
-                </div>
-              </div>
-              <div class="player">
-                <div class="player__img">
-                  <img src="./img/players/abdo.jpeg" alt="Neymar Jr Photo" alt="Abdelrhman Fouad" />
-  
+                  <img src="./img/players/abdo.jpeg" class="popup-img" alt="Abdelrhman Fouad" />
+
                 </div>
                 <div class="player__name">
                   <h3 class="text-light">Abdelrhman Fouad</h3>
@@ -205,22 +180,91 @@
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/00.jpg" alt="Neymar Jr Photo" alt="Ali Ahmed" />
-  
+                  <img src="./img/players/00.jpg" class="popup-img" alt="Ahmed Nabil" />
+
                 </div>
                 <div class="player__name">
-                  <h3 class="text-light">Ali Ahmed</h3>
+                  <h3 class="text-light">Ahmed Nabil</h3>
                 </div>
                 <div class="player__details">
                   <h4>position:Defender</h4>
                   <h4>Team:Wolves</h4>
-                  <h4>Number:6</h4>
+                  <h4>Number:8</h4>
                 </div>
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/00.jpg" alt="Neymar Jr Photo" alt="Mohamed Abdo" />
-  
+                  <img src="./img/players/00.jpg" class="popup-img" alt="Khaled" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Khaled</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Striker</h4>
+                  <h4>Team:Wolves</h4>
+                  <h4>Number:14</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/kimo.jpg" class="popup-img" alt="Karim Ashraf" />
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Karim Ashraf</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Striker</h4>
+                  <h4>Team:Ghost</h4>
+                  <h4>Number:9</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/saif.jpg" class="popup-img" alt="Saif Ahmed" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Saif Ahmed</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Defender</h4>
+                  <h4>Team:Ghost</h4>
+                  <h4>Number:25</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/mina.jpeg" class="popup-img" alt="Mina Farid" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Mina Farid</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Goalkeeper</h4>
+                  <h4>Team:Ghost</h4>
+                  <h4>Number:1</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/y.ashraf.jpeg" class="popup-img" alt="Yahia ashraf" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Yahia Ashraf</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Striker</h4>
+                  <h4>Team:Ghost</h4>
+                  <h4>Number:10</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/wekaa.jpg" class="popup-img" alt="Mohamed Abdo" />
+
                 </div>
                 <div class="player__name">
                   <h3 class="text-light">Mohamed Abdo</h3>
@@ -233,30 +277,190 @@
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/00.jpg" alt="Neymar Jr Photo" alt="Ahmed Zakaria" />
-  
+                  <img src="./img/players/moussa.jpg" class="popup-img" alt="M.Moussa" />
+
                 </div>
                 <div class="player__name">
-                  <h3 class="text-light">-----------</h3>
+                  <h3 class="text-light">Mousa</h3>
                 </div>
                 <div class="player__details">
-                  <h4>position:</h4>
-                  <h4>Team:</h4>
-                  <h4>Number:</h4>
+                  <h4>position:Striker</h4>
+                  <h4>Team:Ghost</h4>
+                  <h4>Number:7</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="club__table">
+          <div class="players__content">
+            <div class="players">
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/ali.jpeg" class="popup-img" alt="Ali Ahmed" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Ali Ahmed</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Defender</h4>
+                  <h4>Team:Wolves</h4>
+                  <h4>Number:6</h4>
                 </div>
               </div>
               <div class="player">
                 <div class="player__img">
-                  <img src="./img/players/00.jpg" alt="Neymar Jr Photo" alt="Ahmed Zakaria" />
-  
+                  <img src="./img/players/tiny.jpg" class="popup-img" alt="Tiny" />
+
                 </div>
                 <div class="player__name">
-                  <h3 class="text-light">---------</h3>
+                  <h3 class="text-light">Khaled Ismail</h3>
                 </div>
                 <div class="player__details">
-                  <h4>position:</h4>
-                  <h4>Team:</h4>
-                  <h4>Number:</h4>
+                  <h4>position:Striker</h4>
+                  <h4>Team:Blograna</h4>
+                  <h4>Number:7</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/ashraf.jpeg" class="popup-img" alt="Ashraf" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Mohamed AShraf</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Goalkeeper</h4>
+                  <h4>Team:Blograna</h4>
+                  <h4>Number:16</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/hoba.jpeg" class="popup-img" alt="Hoba" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Hoba</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Striker</h4>
+                  <h4>Team:Blograna</h4>
+                  <h4>Number:10</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/kebda.jpeg" class="popup-img" alt="Kebda" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Kebda</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Defender</h4>
+                  <h4>Team:Blograna</h4>
+                  <h4>Number:8</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/khaled sherif.jpeg" class="popup-img" alt="Khaled Shreif" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Khaled sherif</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Defender</h4>
+                  <h4>Team:Blograna</h4>
+                  <h4>Number:2</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/y.shreif.jpg" class="popup-img" alt="Y.Shreif" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Yousef Shreif</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Striker</h4>
+                  <h4>Team:Santos</h4>
+                  <h4>Number:7</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/00.jpg" class="popup-img" alt="Karam" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Karam</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Striker</h4>
+                  <h4>Team:Santos</h4>
+                  <h4>Number:9</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/m.said.jpg" class="popup-img" alt="M.Said" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Mohamed Said</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Defender</h4>
+                  <h4>Team:Santos</h4>
+                  <h4>Number:10</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/k.anwar.jpeg" class="popup-img" alt="Anwar" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Karim Anwar</h3>
+                </div>
+                <div class="player__details">
+                  <h4>Position:Defender</h4>
+                  <h4>Team:Santos</h4>
+                  <h4>Number:11</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/00.jpg" class="popup-img" alt="Adham" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Adham</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Defender</h4>
+                  <h4>Team:Santos</h4>
+                  <h4>Number:12</h4>
+                </div>
+              </div>
+              <div class="player">
+                <div class="player__img">
+                  <img src="./img/players/00.jpg" class="popup-img" alt="Hazem" />
+
+                </div>
+                <div class="player__name">
+                  <h3 class="text-light">Hazem</h3>
+                </div>
+                <div class="player__details">
+                  <h4>position:Goalkeeper</h4>
+                  <h4>Team:Santos</h4>
+                  <h4>Number:1</h4>
                 </div>
               </div>
             </div>
@@ -264,14 +468,15 @@
         </div>
       </div>
     </div>
-   
   </section>
 
-  <section id="club" class="club__section">
+  <section id="club" class="club__section"  data-aos="fade-up">
     <div class="club__content">
       <div class="club__text-content">
 
-        <h2> Te<span>a</span>ms R<span>a</span>nk</h2>
+        <button class="bt">
+          <h2> Te<span>a</span>ms R<span>a</span>nk</h2>
+        </button>
       </div>
 
       <div class="club__table">
@@ -280,33 +485,66 @@
             <th>Rank</th>
             <th>Club</th>
             <th>win</th>
-            <th>Draw</th>
             <th>loss</th>
+            <th>Draw</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
             <th>Points</th>
 
           </tr>
           <tr>
             <td>1</td>
-            <td>Ghost</td>
-            <td>6</td>
-            <td>2</td>
+            <td>Santos</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>14</td>
             <td>3</td>
-            <td>20</td>
+            <td>+11</td>
+            <td>3</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Wolves</td>
-            <td>3</td>
-            <td>2</td>
+            <td>Blograna</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
             <td>6</td>
-            <td>11</td>
+            <td>3</td>
+            <td>+3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ghost</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+            <td>6</td>
+            <td>-3</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Wolves</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+            <td>3</td>
+            <td>14</td>
+            <td>-11</td>
+            <td>0</td>
           </tr>
         </table>
       </div>
       <div class="club__content">
         <div class="club__text-content">
 
-          <h2> T<span>o</span>p Sc<span>o</span>rer</h2>
+          <button class="bt">
+            <h2> T<span>o</span>p Sc<span>o</span>rer</h2>
+          </button>
         </div>
 
         <div class="top__table">
@@ -314,27 +552,45 @@
             <tr>
               <th>Rank</th>
               <th>Name</th>
+              <th>Team</th>
               <th>Play</th>
               <th>Goal</th>
 
             </tr>
             <tr>
               <td>1</td>
-              <td>K.Ashraf</td>
-              <td>9</td>
-              <td>32</td>
+              <td>Shreif</td>
+              <td>Santos</td>
+              <td>1</td>
+              <td>6</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>ziko</td>
-              <td>11</td>
-              <td>32</td>
+              <td>Hoba</td>
+              <td>Blograna</td>
+              <td>1</td>
+              <td>6</td>
             </tr>
             <tr class="top3">
               <td>3</td>
-              <td>Y.Ashraf</td>
-              <td>11</td>
-              <td>29</td>
+              <td>M.Said</td>
+              <td>Santos</td>
+              <td>1</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Ziko</td>
+              <td>Wolves</td>
+              <td>1</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>K.Ashraf/Karam</td>
+              <td>Ghost/Santos</td>
+              <td>1</td>
+              <td>2</td>
             </tr>
           </table>
         </div>
@@ -342,374 +598,378 @@
     </div>
   </section>
 
-  <section id="match-result" class="club__section">
-   
-      <div class="club__content">
-        <div class="club__text-content mb-5">
-          <h2>Matchs results</h2>
-        </div>
+  <section id="match-result" class="club__section"  data-aos="fade-up">
+
+    <div class="club__content">
+      <div class="club__text-content mb-5">
+        <button class="bt">
+          <h2>Matchs Results</h2>
+        </button>
+      </div>
 
 
-        <div class="slider-container">
-          <div id="slider" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/rus.jfif" class="card-img-top" alt="Image 1" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Wolves Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Monday: 30/12/2024
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img
-                      src="./img/Results/Blue Red and yellow Soccer Match Result And Score Instagram Post_20250107_005328_٠٠٠٠.png"
-                      class="card-img-top" alt="Image 2" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Wolves Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Monday: 6/1/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/rus13-1.jfif" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Draw <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                      </h3>
-                      <p class="date">
-                        Monday: 13/1/2025
-                      </p>
-                    </div>
+      <div class="slider-container">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/5-4-2025.jfif" class="card-img-top popup-img"
+                    alt="Image 1"class="popup-img">
+                  <div class="player__name">
+                    <h3><i class="fa fa-trophy" aria-hidden="true"></i> Santos Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: 4/5/2025
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/rus20-1.jfif" class="card-img-top" alt="Image 4" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Ghost Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Monday: 20/1/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/rus28-1.jpeg" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Draw <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
-                      </h3>
-                      <p class="date">
-                        Tuesday: 28/1/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/e44dccdd-10b1-45e9-afe8-ae5559e4f8ea.jfif" class="card-img-top"
-                      alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Ghost Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-
-                      <p class="date">
-                        Tuesday: 4/2/2025
-                      </p>
-                    </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/5-4-2025 2.jfif" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-trophy" aria-hidden="true"></i> Blograna Win<i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: 5/4/2025
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/24558297-0464-4491-a204-e13d64988ed5.jfif" class="card-img-top"
-                      alt="Image 4" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Ghost Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Monday: 11/2/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="img/Results/3dc828e4-41ea-434f-a805-9ce66408c5f8.jfif" class="card-img-top" alt="Image 3"
-                      onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Ghost Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Tuesday: 18/2/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/d96705ab-e7bf-4e08-83a8-c6cbf2af5cac.jfif" class="card-img-top"
-                      alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Ghost Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-
-                      <p class="date">
-                        Tuesday: 25/2/2025
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Results/4-3-2025.jpg" class="card-img-top"
-                      alt="Image 4" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Ghost Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Monday:4/3/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="img/Results/11-3-2025.jpeg" class="card-img-top" alt="Image 3"
-                      onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3>Wolves Win <i class="fa fa-trophy" aria-hidden="true"></i></h3>
-                      <p class="date">
-                        Tuesday: 11/3/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <div class="player__name">
-                      <div class="d-flex justify-content-center">
-                        <div class="spinner-border text-danger" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
-                      </div>
-                    </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body text-center">
-                <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg" class="card-img-top popup-img"
+                    alt="Image 1">
+                  <div class="player__name">
+                    <h3>---------- <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                    <p class="date">
+                      Saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-   
-    
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </section>
 
-  <section id="Awards" class="club__section">
-   
-      <div class="club__content">
-        <div class="club__text-content mb-5">
+  <section id="Awards" class="club__section"  data-aos="fade-up">
+
+    <div class="club__content">
+      <div class="club__text-content mb-5">
+        <button class="bt">
           <h2> Awards & Achievements</h2>
-         </div>
+        </button>
+      </div>
 
 
-        <div class="slider-container">
-          <div id="slider" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/ya1.jfif" class="card-img-top" alt="Image 1" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Yahia Ashraf <i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Monday: 30/12/2024
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img
-                      src="./img/Awards/Red White Grunge Final Match Basketball Instagram Post_20250107_005854_٠٠٠٠.png"
-                      class="card-img-top" alt="Image 2" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Omar Master<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Wolves team</h6>
-                      <p class="date">
-                        Monday: 6/1/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/man 3.jfif" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Ahmed Zakaria<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Wolves team</h6>
-                      <p class="date">
-                        Monday: 13/1/2025
-                      </p>
-                    </div>
+      <div class="slider-container">
+        <div id="slider" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/Y.sh" class="card-img-top popup-img" alt="">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>Yousef Shreif<i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">Santos</h6>
+                    <p class="date">
+                      saturday: 5/4/2025
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/k.ash.jfif" class="card-img-top" alt="Image 4" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Karim Ashraf<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Monday: 20/1/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/man5.jpeg" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Mina Farid<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Tuesday: 28/1/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/ya1.jfif" class="card-img-top" alt="Image 1" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Yahia Ashraf <i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Tuesday: 4/2/2025
-                      </p>
-                    </div>
-                  </div>
-  
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/WhatsApp Image 2025-02-12 at 16.49.30.jpeg" class="card-img-top"
-                      alt="Image 1" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>saif Ahmed <i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Tuesday: 11/2/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/man5.jpeg" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Mina Farid<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Tuesday: 18/2/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/man 3.jfif" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Ahmed Zakaria<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Wolves team</h6>
-                      <p class="date">
-                        Tuesday: 25/2/2025
-                      </p>
-                    </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/Hoba.jfif" class="card-img-top popup-img" alt="">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>Hoba<i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">Blograna</h6>
+                    <p class="date">
+                      saturday: 5/4/2025
+                    </p>
                   </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center">
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/m.abdo.jpeg" class="card-img-top"
-                      alt="Image 1" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Mohamed Abdo <i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Ghost team</h6>
-                      <p class="date">
-                        Tuesday: 4/3/2025
-                      </p>
-                    </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      Monday: -/-/2025
+                    </p>
                   </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="./img/Awards/abdo.jpeg" class="card-img-top" alt="Image 3" onclick="showImage(this)">
-                    <div class="player__name">
-                      <h3><i class="fa fa-star" aria-hidden="true"></i>Abdo Fouad<i class="fa fa-star"
-                          aria-hidden="true"></i></h3>
-                      <h6 class="text-primary">Wolves team</h6>
-                      <p class="date">
-                        Tuesday: 11/3/2025
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card mx-2" style="width: 18rem;">
-                      <div class="player__name">
-                        <div class="d-flex justify-content-center">
-                          <div class="spinner-border text-danger" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body text-center">
-                <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Awards/3d-cartoon-character-soccer-player_.jpg" class="card-img-top popup-img" alt="Image 1">
+                  <div class="player__name">
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>-------- <i class="fa fa-star"
+                        aria-hidden="true"></i></h3>
+                    <h6 class="text-primary">----team</h6>
+                    <p class="date">
+                      saturday: -/-/2025
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    
-    
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </section>
 
-  <section id="upcoming" class="upcoming__section">
+  <section id="upcoming" class="upcoming__section"  data-aos="fade-up">
     <div class="upcoming__content fixed__width">
-      <h1>Upcoming Match</h1>
+      <button class="bt">
+        <h1>Upcoming Match</h1>
+      </button>
       <div class="upcoming__matche">
-        <div class="match">
-          <p>(Wolves X Ghost) 18-3-2025 at 12:00 AM</p>
+        <div class="match fs-3">
+          <p class="mt-1">(Wolves X Ghost) 12-4-2025 at 11:00 PM</p>
+          <p class="mt-1">(Blograna X Santos) 12-4-2025 at 12:00 AM</p>
         </div>
       </div>
     </div>
   </section>
-<hr>
+  <hr>
   <!-- Ratting -->
-  <section>
+  <section  data-aos="fade-up">
     <h2 class="players__section fs-1"> Ratting </h2>
     <div class="radio pb-2">
       <input value="1" name="rating" type="radio" id="rating-1" />
@@ -777,14 +1037,30 @@
   </footer>
   <!-- Footer end -->
 
+  <!-- -----------------scrollbtn------------------ -->
+  <button id="scrollToTopBtn" title="الرجوع للأعلى"><img src="./img/download.png" alt="" class="scroll"></button>
+  <!-- -----------------scrollbtn end------------------ -->
 
+<!-- -----------------------popup---------------------- -->
 
+  <div id="imgPopup" class="popup">
+    <span class="close">&times;</span>
+    <img id="popupImage" src="" alt="صورة مكبرة" />
+  </div>
+<!-- -----------------------popup end---------------------- -->
 
-
-
+  <!-- loader-->
+<div id="preloader">
+  <img src="./img/Icons/loder.gif" alt="Loading..." />
+  <h1>Welcome</h1>
+</div>
 
   <script src="./j.s/bootstrap.bundle.min.js"></script>
   <script src="./j.s/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
