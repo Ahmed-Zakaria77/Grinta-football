@@ -1104,9 +1104,7 @@ html {
     width: 100%;
     /* يجعل النص يأخذ العرض بالكامل */
   }
-  .home__text-container h1{
-    font-size: 32px;
-  }
+
   .hero__img-container {
     width: 80%;
     /* يجعل الصورة أصغر قليلًا حتى يكون هناك تناسق */
