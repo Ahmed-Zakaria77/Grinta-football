@@ -425,8 +425,8 @@ body.open .menu>a {
 }
 
 .player__img img {
-  width: 320px;      
-  height: 300px;    
+  width: 320px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -977,6 +977,7 @@ footer .container .copy-right span {
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
+
 /* -------scroll------- */
 html {
   scroll-behavior: smooth;
@@ -1006,13 +1007,14 @@ html {
   background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
   transform: rotate(360deg);
 }
- .scroll{
-  width: 40px;
- }
- /* ----------scroll end------------- */
 
------------popup---------
- .popup-img {
+.scroll {
+  width: 40px;
+}
+
+/* ----------scroll end------------- */
+
+-----------popup--------- .popup-img {
   width: 300px;
   margin: 10px;
   cursor: pointer;
@@ -1027,7 +1029,7 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
 }
@@ -1037,7 +1039,7 @@ html {
   max-height: 80%;
   border-radius: 10px;
   border: 4px solid goldenrod;
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   animation: zoomIn 0.3s ease;
 }
 
@@ -1046,14 +1048,22 @@ html {
   top: 30px;
   right: 40px;
   font-size: 40px;
-  color:goldenrod;
+  color: goldenrod;
   cursor: pointer;
 }
 
 @keyframes zoomIn {
-  from { transform: scale(0.7); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
+
 /* -----------popup end--------- */
 
 /* -------preloader------------- */
@@ -1076,19 +1086,20 @@ html {
   pointer-events: none;
 }
 
-#preloader img{
+#preloader img {
   width: 200px;
 }
+
 /* -------preloader end------------- */
 
 
 /* --------------------@----------- */
 
 @media (max-width: 768px) {
-  .navbar-search{
+  .navbar-search {
     display: none;
   }
- 
+
   .home__container {
     display: flex;
     flex-direction: column;
@@ -1104,9 +1115,12 @@ html {
     width: 100%;
     /* يجعل النص يأخذ العرض بالكامل */
   }
-  .home__text-container h1{
+
+  .home__text-container h1 {
     font-size: 48px;
+    margin-top: 10px;
   }
+
   .hero__img-container {
     width: 80%;
     /* يجعل الصورة أصغر قليلًا حتى يكون هناك تناسق */
@@ -1132,7 +1146,7 @@ html {
   }
 
   .btn {
-    
+
     /* يجعل الأزرار متناسقة */
     text-align: center;
     margin-bottom: 3px;
@@ -1264,9 +1278,11 @@ html {
     padding: 10px;
     font-weight: bold;
   }
-.mt-1{
-  font-size: 13px;
-}
+
+  .mt-1 {
+    font-size: 13px;
+  }
+
   .upcoming__matche {
     display: flex;
     flex-direction: column;
@@ -1284,4 +1300,42 @@ html {
 
   }
 }
+
 /* -----------@------------------ */
+
+.kit{
+ max-width: 700px;
+  max-height: 600px;
+}
+
+.kit img{
+  object-fit: cover;
+}
+
+/* .wrapperimage- {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-wrapper img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+
+.image-wrapper img.second {
+  opacity: 0;
+}
+
+.image-wrapper:hover img.first {
+  opacity: 0;
+}
+
+.image-wrapper:hover img.second {
+  opacity: 1;
+} */
