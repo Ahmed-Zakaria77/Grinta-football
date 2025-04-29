@@ -23,10 +23,10 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // المستخدم في أول سيكشن → خفي الزر
+        //  خفي الزر
         scrollBtn.classList.remove("show");
       } else {
-        // خرج من أول سيكشن → أظهر الزر
+        // أظهر الزر
         scrollBtn.classList.add("show");
       }
     });
@@ -79,6 +79,6 @@ const popup = document.getElementById('imgPopup');
       setTimeout(() => {
         preloader.style.display = "none";
         document.getElementById("mainContent").style.display = "block";
-      }, 500); // مدة الأنيميشن (مطابقة للـ transition في CSS)
-    }, 3000); // مدة شاشة التحميل (ثانيتين)
+      }, 500);
+    }, 3000); 
   });

@@ -471,6 +471,18 @@ body.open .menu>a {
 
 /* -----------player end------------- */
 
+/* -----------Kits------------- */
+
+.kit{
+  max-width: 700px;
+   max-height: 600px;
+ }
+ 
+ .kit img{
+   object-fit: cover;
+ }
+/* -----------Kits end------------- */
+
 .date {
   text-align: center;
 }
@@ -1303,14 +1315,7 @@ html {
 
 /* -----------@------------------ */
 
-.kit{
- max-width: 700px;
-  max-height: 600px;
-}
 
-.kit img{
-  object-fit: cover;
-}
 
 /* .wrapperimage- {
   position: relative;
