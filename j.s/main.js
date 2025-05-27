@@ -91,3 +91,12 @@ const popup = document.getElementById('imgPopup');
       }
     });
 
+function scrollNews(direction) {
+  const slider = document.getElementById("newsSlider");
+  const scrollAmount = 320;
+  if (direction === 'left') {
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  } else {
+    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  }
+}

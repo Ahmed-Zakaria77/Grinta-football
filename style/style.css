@@ -1406,6 +1406,30 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  .slider-btn {
+    display: none;
+  }
+
+  .news-card {
+    min-width: 85%;
+  }
+}
+
+/* يدعم التابلت */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .news-card {
+    min-width: 300px;
+  }
+}
+
+/* يدعم الشاشات الكبيرة */
+@media (min-width: 1025px) {
+  .news-card {
+    min-width: 320px;
+  }
+}
+
 /* -----------@------------------ */
 
 
@@ -1496,3 +1520,151 @@ th {
   font-weight: bolder;
 }
 
+#news {
+  direction: rtl;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.news-container {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.news-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+}
+
+.news-card {
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: scale(1.03);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card h2 {
+  font-size: 1.2em;
+  margin: 10px;
+  background-color: rgba(255, 247, 4, 0.479);
+}
+
+.news-card p {
+  font-size: 0.95em;
+  margin: 0 10px 10px;
+  color: #0732a0;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(27, 111, 255, 0.684);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btn.right {
+  left: 10px;
+  border-radius: 10%;
+}
+
+.slider-btn.left {
+  right: 10px;
+  border-radius: 10%;
+
+}
+
+.card2 {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+}
+.containerTwo:hover {
+  background-color: #0648cb;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+  
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

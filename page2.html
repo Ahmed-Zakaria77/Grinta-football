@@ -113,6 +113,58 @@
       </div>
     </div>
   </section>
+  <section id="news">
+    <div class="player__text-content">
+      <button class="bt mb-5">
+        <h2>News</h2>
+      </button>
+    </div>
+    <div class="news-container">
+      <button class="slider-btn right" onclick="scrollNews('right')"><i
+          class="fas fa-arrow-alt-circle-left"></i></button>
+      <button class="slider-btn left" onclick="scrollNews('left')"><i
+          class="fas fa-arrow-alt-circle-right"></i></button>
+      <div class="news-slider" id="newsSlider">
+        <div class="news-card">
+          <img src="./img/Results/s2 24-5 (2).jpg" alt="New1" class="popup-img">
+          <h2>فوز كبير لفريق ماتادور</h2>
+          <p>حقق فريق ماتادور فوزاً كبير بفارق 10 أهداف على منافسه فريق بافاري ليحتل بهذه النتيجة صدارة الترتيب </p>
+        </div>
+        <div class="news-card">
+          <img src="img/players/heros.jpg" alt="Nwe2" class="popup-img">
+          <h2>بداية جيدة لحامل اللقب <i class="fas fa-shield-alt"></i></h2>
+          <p>فاز فريق بلوجرانا على فريق ميلان وحصد نقاطه الثلاث الأولى في مشوار الحفاظ على لقبه</p>
+        </div>
+        <div class="news-card">
+          <img src="./img/News/eagles.jpg" alt="New3" class="w-75 popup-img">
+          <h2>ريمونتادا</h2>
+          <p>استطاع فريق إيجلز المنضم حديثـًا أن يقلب النتيجة بالفوز 7-5 على فريق جانرز بعد أن كان متأخرًا بفارق هدفين
+          </p>
+        </div>
+        <div class="news-card">
+          <img src="./img/News/ta2gil.jpg" alt="New4" class="popup-img">
+          <h2>تأجيل مبارة <i class="far fa-calendar-alt"></i></h2>
+          <p>تم تأجيل مبارة فريقي ميلان و البافاري في الجولة الثانية إلى يوم الإثنين بدلاً من يوم السبت</p>
+        </div>
+        <div class="news-card">
+          <img src="./img/players/kebda.jpeg" alt="New5" class="popup-img">
+          <h2>إصابة مؤثرة <i class="fas fa-exclamation-circle"></i></h2>
+          <p>إصابة اللاعب عبدالرحمن الشهير بـ (كبدة) لاعب فريق بلوجرانا وقد تمنعه إصابته من المشاركة مع فريقه في ثاني
+            المباريات أمام فريق جانرز</p>
+        </div>
+        <div class="news-card">
+          <img src="./img/News/week2.jpg" alt="New6" class="popup-img">
+          <h2>جولة قوية <i class="fas fa-bomb"></i></h2>
+          <p>تشهد الجولة الثانية مباريات قوية حيث يتقابل فريق ماتادور مع فريق إيجلز لخطف الصدارة
+            <br>
+            في حين يواجه الجانرز فريق بلوجرانا أملاً في تعويض خسارة الجولة الماضية
+            <br>
+            ويواجه ميلان فريق البافاري لمحاولة كلاً منهما الحصول على نقاطهم الثلاث الأولى
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="player" class="players__section " data-aos="fade-up">
     <div class="container2">
@@ -942,16 +994,14 @@
           <h2>Matchs Results</h2>
         </button>
       </div>
-
-
       <div class="slider-container">
         <div id="slider" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="d-flex justify-content-center">
                 <div class="card mx-2" style="width: 18rem;">
-                  <img src="./img/Results/s2 24-5 (1).jpg"
-                    class="card-img-top popup-img" alt="Image 1" class="popup-img">
+                  <img src="./img/Results/s2 24-5 (1).jpg" class="card-img-top popup-img" alt="Image 1"
+                    class="popup-img">
                   <div class="player__name">
                     <h3><i class="fa fa-trophy" aria-hidden="true"></i> Eagles Win <i class="fa fa-trophy"
                         aria-hidden="true"></i></h3>
@@ -961,8 +1011,8 @@
                   </div>
                 </div>
                 <div class="card mx-2" style="width: 18rem;">
-                  <img src="./img/Results/s2 24-5 (2).jpg"
-                    class="card-img-top popup-img" alt="Image 1" class="popup-img">
+                  <img src="./img/Results/s2 24-5 (2).jpg" class="card-img-top popup-img" alt="Image 1"
+                    class="popup-img">
                   <div class="player__name">
                     <h3><i class="fa fa-trophy" aria-hidden="true"></i> Matador Win <i class="fa fa-trophy"
                         aria-hidden="true"></i></h3>
@@ -971,9 +1021,9 @@
                     </p>
                   </div>
                 </div>
-                 <div class="card mx-2" style="width: 18rem;">
-                  <img src="./img/Results/s2 24-5 (3)jpg.jpg"
-                    class="card-img-top popup-img" alt="Image 1" class="popup-img">
+                <div class="card mx-2" style="width: 18rem;">
+                  <img src="./img/Results/s2 24-5 (3)jpg.jpg" class="card-img-top popup-img" alt="Image 1"
+                    class="popup-img">
                   <div class="player__name">
                     <h3><i class="fa fa-trophy" aria-hidden="true"></i> Blograna Win <i class="fa fa-trophy"
                         aria-hidden="true"></i></h3>
@@ -986,7 +1036,7 @@
             </div>
             <div class="carousel-item">
               <div class="d-flex justify-content-center">
-               
+
                 <div class="card mx-2" style="width: 18rem;">
                   <img src="./img/Results/football-stadium-with-fans-graphic_18591-21762.jpg"
                     class="card-img-top popup-img" alt="Image 1" class="popup-img">
@@ -1137,7 +1187,8 @@
                 <div class="card mx-2" style="width: 18rem;">
                   <img src="./img/Awards/omar ali.jpg" class="card-img-top popup-img" alt="">
                   <div class="player__name">
-                    <h3><i class="fa fa-star" aria-hidden="true"></i>Omar Ali<i class="fa fa-star" aria-hidden="true"></i>
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>Omar Ali<i class="fa fa-star"
+                        aria-hidden="true"></i>
                     </h3>
                     <h6 class="text-primary"> Eagles team</h6>
                     <p class="date">
@@ -1148,7 +1199,8 @@
                 <div class="card mx-2" style="width: 18rem;">
                   <img src="./img/Awards/abduallah.jpg" class="card-img-top popup-img" alt="">
                   <div class="player__name">
-                    <h3><i class="fa fa-star" aria-hidden="true"></i>Abduallah Sakr<i class="fa fa-star" aria-hidden="true"></i>
+                    <h3><i class="fa fa-star" aria-hidden="true"></i>Abduallah Sakr<i class="fa fa-star"
+                        aria-hidden="true"></i>
                     </h3>
                     <h6 class="text-primary"> Matador team</h6>
                     <p class="date">
@@ -1505,7 +1557,46 @@
         </svg>
       </label>
     </div>
-    <p class="fs-1 text-center">Thanks for you</p>
+    <h2 class="fs-1 text-center">Join us on social media</h2>
+    <div class="card2 m-auto">
+      <a class="socialContainer containerTwo" href="https://www.facebook.com/share/g/1AcMytvJUx/">
+
+        <svg class=" socialSvg w-75" xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24" id="Layer_21"
+          height="24" data-name="Layer 21">
+          <title></title>
+          <path d="M16.75,9H13.5V7a1,1,0,0,1,1-1h2V3H14a4,4,0,0,0-4,4V9H8v3h2v9h3.5V12H16Z"></path>
+        </svg>
+
+      </a>
+
+      <a class="socialContainer containerThree"
+        href="https://m.me/cm/AbbOz6d7v64LZTgw/?send_source=cm%3Acopy_invite_link">
+        <svg class=" socialSvg w-50" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>Messenger-color</title>
+            <desc>Created with Sketch.</desc>
+            <defs> </defs>
+            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Color-" transform="translate(-301.000000, -860.000000)" fill="#007FFF">
+                <path
+                  d="M325,860 C311.745143,860 301,869.949185 301,882.222222 C301,889.215556 304.489988,895.453481 309.944099,899.526963 L309.944099,908 L318.115876,903.515111 C320.296745,904.118667 322.607155,904.444444 325,904.444444 C338.254857,904.444444 349,894.495259 349,882.222222 C349,869.949185 338.254857,860 325,860 L325,860 Z M327.385093,889.925926 L321.273292,883.407407 L309.347826,889.925926 L322.465839,876 L328.726708,882.518519 L340.503106,876 L327.385093,889.925926 L327.385093,889.925926 Z"
+                  id="Messenger"> </path>
+              </g>
+            </g>
+          </g>
+        </svg> </a>
+
+      <a class="socialContainer containerFour" href="https://chat.whatsapp.com/HryABtsWnCuJJyyhDVW9tn">
+        <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg w-50">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+          </path>
+        </svg>
+      </a>
+    </div>
   </section>
   <!-- Ratting end -->
   <!-- Footer  -->
