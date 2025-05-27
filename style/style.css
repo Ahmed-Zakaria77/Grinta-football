@@ -1539,11 +1539,13 @@ th {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 20px;
+  height: 450px;
 }
 
 .news-card {
   min-width: 300px;
   max-width: 300px;
+  height: 400px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1566,12 +1568,14 @@ th {
   font-size: 1.2em;
   margin: 10px;
   background-color: rgba(255, 247, 4, 0.479);
+  font-weight: bolder;
 }
 
 .news-card p {
   font-size: 0.95em;
   margin: 0 10px 10px;
   color: #0732a0;
+  font-weight: bolder;
 }
 
 .slider-btn {
@@ -1668,3 +1672,4 @@ th {
     opacity: 1;
   }
 }
+
