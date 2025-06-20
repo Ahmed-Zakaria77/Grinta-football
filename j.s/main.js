@@ -100,3 +100,4 @@ function scrollNews(direction) {
     slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   }
 }
+
