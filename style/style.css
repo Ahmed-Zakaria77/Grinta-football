@@ -803,6 +803,9 @@ body.open .menu>a {
   background: #e02c6d;
 }
 
+.top__table table tr:nth-child(6n + 1) {
+  background: rgb(255, 255, 255);
+}
 .player__name {
   text-align: center;
 }
@@ -1715,10 +1718,11 @@ th {
   height: 400px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.797);
   overflow: hidden;
   flex-shrink: 0;
   transition: transform 0.3s ease;
+  margin: auto;
 }
 
 .news-card:hover {
